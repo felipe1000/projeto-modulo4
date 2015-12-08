@@ -2,18 +2,18 @@
 
 namespace src;
 
-use InterfaceImput;
+use InterfaceInput;
 
 class Form{
 
-	public function __construct(InterfaceImput $InterfaceImput){
+	public function __construct(InterfaceInput $InterfaceInput){
 
-		$this->Campo = $InterfaceImput;
+		$this->Campo = $InterfaceInput;
 		
 	}
 	public function Render(){
 
-		echo "<br>".$this->Campo->Imput().": <input type='text'name=".$this->Campo->Imput()."><br>";	
+		echo "<br>".$this->Campo->Input()."<br>";	
 	
 	}
 }
